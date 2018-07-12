@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h2 align="center">ASSIGNMENT'S COVERPAGE GENERATOR</h2>
+<b><p align="center">If you click the "Create" button, the inserted data will be sent to a page called "form.php" and automatically create your coversheet in PDF format.</p></b>
+
+<div class="container">
+  <form action="form.php" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="subname">Subject Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="s_name" name="subname" placeholder="Your subject name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subcode">Subject Code</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="s_code" name="subcode" placeholder="Your subject code..">
+        </div>
+        </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="title">Assignment Title</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="s_name" name="title" placeholder="Your subject name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="studname">Student Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="stud_name" name="studname" placeholder="Your name..">
+        </div>
+        </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="id">ID Number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="idnum" name="id" placeholder="Your ID number..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="class">Class</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="s_class" name="class" placeholder="Your class..">
+        </div>
+        </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lectname">Lecturer Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="l_name" name="lectname" placeholder="Your lecturer name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="mentor">Mentor Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="m_name" name="mentor" placeholder="Your mentor name..">
+        </div>
+        </div>
+    <div class="row">
+      <input type="submit" value="Create" name="submit">
+    </div>
+  </form>
+</div>
+<div><b><p align="center"> © Copyright 2018 aimanremy.com </p></b></div>
+</body>
+</html>
